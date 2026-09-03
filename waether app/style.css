@@ -1,0 +1,124 @@
+/* Universal selector to reset default margins, padding, and set font family */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box; /* Includes padding and border in element's total width/height */
+}
+
+/* Body styling with dark background */
+body {
+    background: #222; /* Dark gray background */
+}
+
+/* Card container styling */
+.card {
+    width: 90%; /* Takes 90% of parent width */
+    max-width: 450px; /* Maximum width of 450px */
+    background: linear-gradient(350deg, #a619f8, #00f2fe); /* Purple to teal gradient */
+    color: #fff; /* White text */
+    margin: 100px auto 0; /* 100px top margin, centered horizontally */
+    border-radius: 20px; /* Rounded corners */
+    padding: 40px 35px; /* Internal spacing */
+    text-align: center; /* Center-align all text */
+}
+
+/* Search bar container */
+.search {
+    width: 100%; /* Full width of parent */
+    display: flex; /* Flexbox layout */
+    align-items: center; /* Vertically center items */
+    justify-content: space-between; /* Space between input and button */
+}
+
+/* Search input field */
+.search input {
+    border: 0; /* No border */
+    outline: 0; /* Remove focus outline */
+    background: #ebfffc; /* Light cyan background */
+    color: #555; /* Dark gray text */
+    padding: 10px 25px; /* Internal spacing */
+    height: 60px; /* Fixed height */
+    border-radius: 30px; /* Fully rounded corners */
+    flex: 1; /* Take remaining space */
+    margin-right: 16px; /* Space between input and button */
+    font-size: 18px; /* Larger font size */
+}
+
+/* Search button */
+.search button {
+    border: 0; /* No border */
+    outline: 0; /* Remove focus outline */
+    background: #ebfffc; /* Light cyan background */
+    border-radius: 50%; /* Circular shape */
+    width: 60px; /* Fixed width */
+    height: 60px; /* Fixed height (matches input) */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Search button image (magnifying glass icon) */
+.search button img {
+    width: 16px; /* Icon size */
+}
+
+/* Weather icon styling */
+.weather-icon {
+    width: 70px; /* Icon size */
+    margin-top: 30px; /* Space above the icon */
+}
+
+/* Main temperature display */
+.weather h1 {
+    font-size: 80px; /* Very large font */
+    font-weight: 500; /* Medium weight */
+}
+
+/* City name display */
+.weather h2 {
+    font-size: 45px; /* Large font */
+    font-weight: 400; /* Regular weight */
+    margin-top: -10px; /* Pulls closer to temperature */
+}
+
+/* Humidity and wind container */
+.details {
+    display: flex; /* Flexbox layout */
+    align-items: center; /* Vertical alignment */
+    justify-content: space-between; /* Space between columns */
+    padding: 0 20px; /* Horizontal padding */
+    margin-top: 50px; /* Space above the details */
+}
+
+/* Each detail column (humidity/wind) */
+.col {
+    display: flex; /* Flexbox layout */
+    align-items: center; /* Vertical alignment */
+    text-align: left; /* Left-align text */
+}
+
+/* Detail icons (humidity/wind) */
+.col img {
+    width: 40px; /* Icon size */
+    margin-right: 10px; /* Space between icon and text */
+}
+
+/* Humidity and wind text values */
+.humidity, .wind {
+    font-size: 28px; /* Large font */
+    margin-top: -6px; /* Adjust vertical alignment */
+}
+
+/* Weather info container - initially hidden */
+.weather {
+    display: none; /* Hidden by default */
+}
+
+/* Error message styling */
+.error {
+    text-align: left; /* Left-aligned text */
+    margin-left: 10px; /* Indentation */
+    font-size: 14px; /* Small font */
+    margin-top: 10px; /* Space above */
+    color: #FF0000; /* Red color for errors */
+    display: none; /* Hidden by default */
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!-- HTML5 document type declaration -->
+<html lang="en">
+<!-- Root element with English language specification -->
+<head>
+    <!-- Document metadata and links to external resources -->
+    <meta charset="UTF-8"> <!-- Character encoding -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive viewport settings -->
+    <title>Weather app</title> <!-- Page title shown in browser tab -->
+    <link rel="stylesheet" href="style.css"> <!-- Link to external CSS stylesheet -->
+</head>
+<body>
+    <!-- Main content of the webpage -->
+    
+    <!-- Card container for all weather app content -->
+    <div class="card">
+        <!-- Search section with input and button -->
+        <div class="search">
+            <!-- City name input field -->
+            <input type="text" placeholder="enter city name" spellcheck="false">
+            <!-- Search button with magnifying glass icon -->
+            <button><img src="img/images/search.png" alt="Search icon"></button>
+        </div>
+        
+        <!-- Error message section (hidden by default) -->
+        <div class="error">
+            <p>Invalid city name</p> <!-- Error message text -->
+        </div>
+        
+        <!-- Weather information display section (hidden by default) -->
+        <div class="weather">
+            <!-- Weather condition icon -->
+            <img src="img/images/rain.png" class="weather-icom" alt="Weather icon">
+            <!-- Temperature display -->
+            <h1 class="temp">22°C</h1>
+            <!-- City name display -->
+            <h2 class="city">city</h2>
+            
+            <!-- Additional weather details section -->
+            <div class="details">
+                <!-- Humidity information column -->
+                <div class="col">
+                    <img src="img/images/humidity.png" alt="Humidity icon">
+                    <div>
+                        <p class="humidity">50%</p> <!-- Humidity value -->
+                        <p>Humidity</p> <!-- Humidity label -->
+                    </div>
+                </div>
+                
+                <!-- Wind information column -->
+                <div class="col">
+                    <img src="img/images/wind.png" alt="Wind icon">
+                    <div>
+                        <p class="wind">15km/h</p> <!-- Wind speed value -->
+                        <p>wind speed</p> <!-- Wind speed label -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Link to external JavaScript file -->
+    <script src="weatherRepot.js"></script>
+</body>
+</html>
